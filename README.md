@@ -1,10 +1,10 @@
-# MedAI Molecular Intelligence
+# MediAI Molecular Intelligence
 
 > A transparent and reproducible cheminformatics project for molecular-property analysis, ADMET/QSAR benchmarking, and evidence-based compound prioritization.
 
 ## Mission
 
-MedAI Molecular Intelligence is an open research and education project being built to explore how cheminformatics, machine learning, and pharmaceutical knowledge can support early-stage drug-discovery research.
+MediAI Molecular Intelligence is an open research and education project being built to explore how cheminformatics, machine learning, and pharmaceutical knowledge can support early-stage drug-discovery research.
 
 The project focuses on scientifically responsible computational workflows. It does not claim to discover, validate, or approve medicines.
 
@@ -58,4 +58,4 @@ Outputs from molecular-property analysis or machine-learning models do not estab
 
 **Status:** Active — Day 01  
 **Builder:** Samar Dwivedi  
-**MedAI Focus:** AI Drug Discovery, Cheminformatics, Pharmaceutical Research, and Scientific Education
+**MediAI Focus:** AI Drug Discovery, Cheminformatics, Pharmaceutical Research, and Scientific Education
