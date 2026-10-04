@@ -1,0 +1,11 @@
+Molecule_1,Molecule_2,Tanimoto_Similarity,Interpretation
+Aspirin,Paracetamol,0.222,Low-to-moderate structural similarity
+Aspirin,Ibuprofen,0.195,Low structural similarity
+Paracetamol,Ibuprofen,0.184,Low structural similarity
+Paracetamol,Caffeine,0.098,Low structural similarity
+Aspirin,Caffeine,0.089,Low structural similarity
+Paracetamol,Metformin,0.088,Low structural similarity
+Caffeine,Ibuprofen,0.087,Low structural similarity
+Aspirin,Metformin,0.051,Low structural similarity
+Ibuprofen,Metformin,0.05,Low structural similarity
+Caffeine,Metformin,0.024,Low structural similarity

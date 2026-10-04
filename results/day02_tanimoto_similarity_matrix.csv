@@ -1,0 +1,6 @@
+,Aspirin,Paracetamol,Caffeine,Ibuprofen,Metformin
+Aspirin,1.0,0.222,0.089,0.195,0.051
+Paracetamol,0.222,1.0,0.098,0.184,0.088
+Caffeine,0.089,0.098,1.0,0.087,0.024
+Ibuprofen,0.195,0.184,0.087,1.0,0.05
+Metformin,0.051,0.088,0.024,0.05,1.0
