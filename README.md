@@ -59,3 +59,34 @@ Outputs from molecular-property analysis or machine-learning models do not estab
 **Status:** Active — Day 01  
 **Builder:** Samar Dwivedi  
 **MediAI Focus:** AI Drug Discovery, Cheminformatics, Pharmaceutical Research, and Scientific Education
+---
+
+## Project 03 — Transparent EGFR Bioactivity Classification
+
+A reproducible ChEMBL and RDKit baseline for classifying EGFR bioactivity from curated public IC50 records.
+
+### What I built
+
+- Retrieved **19,646** raw ChEMBL EGFR IC50 records.
+- Restricted the primary dataset to direct, single-protein **confidence-score-9** evidence.
+- Aggregated repeat measurements and excluded molecules with threshold-crossing labels.
+- Retained **7,757** unique RDKit-standardized molecular structures.
+- Generated 2,048-bit radius-2 Morgan fingerprints.
+- Evaluated a class-weighted Logistic Regression baseline using both stratified random and Bemis–Murcko scaffold-disjoint splits.
+
+### Baseline result
+
+| Evaluation split | ROC-AUC | PR-AUC | MCC | Balanced accuracy | Brier score |
+|---|---:|---:|---:|---:|---:|
+| Random test split | 0.9097 | 0.9715 | 0.6314 | 0.8378 | 0.0976 |
+| Scaffold test split | 0.8906 | 0.9643 | 0.5949 | 0.8214 | 0.1096 |
+
+The scaffold result is an internal generalization check, not external or prospective drug-discovery validation.
+
+**Project links:**  
+[Notebook](notebooks/03_chembl_egfr_dataset_audit.ipynb) ·
+[Data card](results/day03_egfr_data_card.md) ·
+[Metrics](results/day03_logistic_baseline_metrics.csv) ·
+[Evaluation figures](results/day03_logistic_evaluation_curves.png)
+
+
