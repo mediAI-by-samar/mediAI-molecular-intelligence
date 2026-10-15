@@ -1,0 +1,5 @@
+model,experiment,test_size,true_negatives,false_positives,false_negatives,true_positives,correct_predictions,total_errors
+Logistic Regression,random_split,1552,236,67,129,1120,1356,196
+Random Forest,random_split,1552,230,73,90,1159,1389,163
+Logistic Regression,scaffold_split,1418,214,67,135,1002,1216,202
+Random Forest,scaffold_split,1418,213,68,89,1048,1261,157
