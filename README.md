@@ -56,7 +56,7 @@ Outputs from molecular-property analysis or machine-learning models do not estab
 
 ## Project Status
 
-**Status:** Active — Day 01  
+**Status:** Day 04  
 **Builder:** Samar Dwivedi  
 **MediAI Focus:** AI Drug Discovery, Cheminformatics, Pharmaceutical Research, and Scientific Education
 ---
