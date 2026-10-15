@@ -89,4 +89,37 @@ The scaffold result is an internal generalization check, not external or prospec
 [Metrics](results/day03_logistic_baseline_metrics.csv) ·
 [Evaluation figures](results/day03_logistic_evaluation_curves.png)
 
+---
+
+## Project 04 — Fixed Random Forest Comparison on EGFR
+
+A restrained Random Forest baseline was evaluated on the exact frozen Day 03 ChEMBL EGFR dataset, Morgan fingerprints, labels, and random/scaffold test assignments.
+
+### Fixed comparison design
+
+- Same **7,757** curated EGFR structures.
+- Same radius-2, 2,048-bit Morgan fingerprints.
+- Same frozen random and Bemis–Murcko scaffold splits.
+- No test-set hyperparameter tuning.
+- Random Forest configuration: 500 trees, `sqrt` features, minimum leaf size 2, class weighting, seed 42.
+
+### Key result
+
+| Split | Model | ROC-AUC | PR-AUC | MCC | F1 | Brier score |
+|---|---|---:|---:|---:|---:|---:|
+| Random | Logistic Regression | 0.9097 | 0.9715 | 0.6314 | 0.9195 | 0.0976 |
+| Random | Random Forest | 0.9398 | 0.9830 | 0.6731 | 0.9343 | 0.0787 |
+| Scaffold | Logistic Regression | 0.8906 | 0.9643 | 0.5949 | 0.9084 | 0.1096 |
+| Scaffold | Random Forest | 0.9410 | 0.9837 | 0.6618 | 0.9303 | 0.0816 |
+
+Random Forest made **33 fewer errors** on the random test split and **45 fewer errors** on the scaffold test split at the fixed 0.50 threshold. It is the leading internal predictive baseline in this fixed comparison.
+
+This remains an internal public-data evaluation—not external, prospective, clinical, safety, efficacy, or drug-discovery validation.
+
+**Project links:**  
+[Notebook](notebooks/04_egfr_random_forest_comparison.ipynb) ·
+[Comparison data card](results/day04_random_forest_comparison_data_card.md) ·
+[Metrics](results/day04_model_comparison_metrics.csv) ·
+[Evaluation figures](results/day04_model_comparison_evaluation_curves.png)
+
 
